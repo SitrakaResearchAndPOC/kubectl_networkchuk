@@ -34,12 +34,14 @@ Deployement :  i want three pods </br>
 
 
 yaml ---> manifest deployment
-
+```
+wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/kubectl_networkchuk/main/networkchuckcoffee_deployment.yaml
+```
 ```
 kubectl delete pods networkchuckcoffee
 ```
 ```
-kubectl apply -f manifest.yaml
+kubectl apply -f networkchuckcoffee_deployment.yaml
 ```
 ```
 kubectl get pods
@@ -59,9 +61,13 @@ change replica </br>
 kubectl edit deployment <name of deployement>
 ```
 Expose web site : </br>
-service is exposed to the manifest service
-
-
+service is exposed to the manifest service (yaml)
+```
+wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/kubectl_networkchuk/main/networkchuckcoffee_service.yaml
+```
+```
+kubectl apply -f networkchuckcoffee_service.yaml
+```
 ```
 kubectl get services
 ```
