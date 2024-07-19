@@ -27,12 +27,11 @@ kubectl get pods
 ```
 kubectl describe pods
 ```
-Deployement :  i want three pods </br>
+* Deployement 
+i want three pods </br>
 -3 </br>
 -nccoffee </br>
 -port 80 </br>
-
-
 yaml ---> manifest deployment
 ```
 wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/kubectl_networkchuk/main/networkchuckcoffee_deployment.yaml
@@ -60,7 +59,8 @@ change replica </br>
 ```
 kubectl edit deployment <name of deployement>
 ```
-Expose web site : </br>
+* Services
+Expose web site </br>
 service is exposed to the manifest service (yaml)
 ```
 wget https://raw.githubusercontent.com/SitrakaResearchAndPOC/kubectl_networkchuk/main/networkchuckcoffee_service.yaml
