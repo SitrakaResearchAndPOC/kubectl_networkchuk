@@ -25,44 +25,47 @@ kubectl run networkchuckcoffee --image=thenetworkchuck/nccoffee:pourover --port=
 kubectl get pods
 ```
 ```
-
 kubectl describe pods
-
-
-Deployement :  i want three pods
--3
--nccoffee
--port 80
+```
+Deployement :  i want three pods </br>
+-3 </br>
+-nccoffee </br>
+-port 80 </br>
 
 
 yaml ---> manifest deployment
 
-
+```
 kubectl delete pods networkchuckcoffee
-
+```
+```
 kubectl apply -f manifest.yaml
-
+```
+```
 kubectl get pods
-
+```
+```
 kubectl delete pods networkchuckcoffee
-
-
+```
+```
 kubectl get deployements
-
+```
+```
 get the name of deployment
-
-edit manifest : 
+```
+edit manifest : </br>
+change replica </br>
+```
 kubectl edit deployment <name of deployement>
-
-who to expose web site :
-------------------------
-
+```
+Expose web site : </br>
 service is exposed to the manifest service
 
+
+```
 kubectl get services
-
-Go to nodebalancers on Linode
-
+```
+Go to nodebalancers on Linode and verify </br>
+```
 kubectl describe services coffee-service
-
-
+```
